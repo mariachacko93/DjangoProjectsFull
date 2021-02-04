@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<h1>welcome user{{request.user}}</h1>
+
+<h1>{{request.user}}Logout<a href="{%url 'logout'%}"></a></h1>
+
+
+<a href="{%url 'edit'%}">edit profile</a>
+<a href="{%url 'expens'%}">add expenses</a>
+</body>
+</html>

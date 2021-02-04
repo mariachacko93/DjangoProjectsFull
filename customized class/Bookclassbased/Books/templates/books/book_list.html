@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booklist</title>
+</head>
+<body>
+<h1>BookList!!!</h1>
+{%for book in books%}
+Book name-{{book.book_name}}/
+Pages-{{book.pages}}/
+Price-{{book.price}}/
+Author-{{book.author}}
+
+
+<a href="{%url 'bedit' book.id %}">Edit</a>
+<a href="{%url 'bdelete' book.id %}">Delete</a>
+
+<hr>
+{%endfor%}
+</body>
+</html>
